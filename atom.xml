@@ -3,11 +3,11 @@
   <title>吴朝祥的个人博客</title>
   
   
-  <link href="/wcxblog/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="https://wcx996.gitee.io/wcxblog/"/>
+  <link href="https://wcxwcx.github.io/"/>
   <updated>2019-02-02T09:11:44.000Z</updated>
-  <id>https://wcx996.gitee.io/wcxblog/</id>
+  <id>https://wcxwcx.github.io/</id>
   
   <author>
     <name>吴朝祥</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://wcx996.gitee.io/wcxblog/2019/02/02/hello-world/"/>
-    <id>https://wcx996.gitee.io/wcxblog/2019/02/02/hello-world/</id>
+    <link href="https://wcxwcx.github.io/2019/02/02/hello-world/"/>
+    <id>https://wcxwcx.github.io/2019/02/02/hello-world/</id>
     <published>2019-02-02T09:11:44.000Z</published>
     <updated>2019-02-02T09:11:44.000Z</updated>
     
@@ -34,10 +34,10 @@
     
     </summary>
     
-      <category term="test" scheme="https://wcx996.gitee.io/wcxblog/categories/test/"/>
+      <category term="test" scheme="https://wcxwcx.github.io/categories/test/"/>
     
     
-      <category term="test" scheme="https://wcx996.gitee.io/wcxblog/tags/test/"/>
+      <category term="test" scheme="https://wcxwcx.github.io/tags/test/"/>
     
   </entry>
   
