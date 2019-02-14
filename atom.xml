@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>吴朝祥的个人博客</title>
   
-  
+  <subtitle>今天是个好日子</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wcxwcx.github.io/"/>
