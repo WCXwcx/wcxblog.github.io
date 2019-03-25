@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java编译过程]]></title>
+    <url>%2F2019%2F03%2F25%2FJava%E7%BC%96%E8%AF%91%2F</url>
+    <content type="text"><![CDATA[1.Java编程过程 2.JVM将字节码翻译为机器码的过程 引用 https://time.geekbang.org/column/article/11289 中的图片 3.解释执行和JIT的区别概念：JIT：just-in-time compilation，即时编译器 解释执行：逐行读取字节码，一边翻译为机器码一边执行。优点：不需要一次把大文件加载到内存，由于不需要提前编译，所有启动的速度比较快 JIT：将热点代码 整体翻译为机器码，再执行。通常以一个方法为单位。优点：执行时速度比较快，而且提前整体编译，jvm知道运行时的部分信息，可以进行优化，比较适合对性能要求比较高的应用 JVM采用两种混合的模式，先解释执行字节码，对于反复执行的代码，已方法为单位进行即时编译，下次调用时直接从内存读取编译后的结果即可。 4.即使编译器的分类目前主要有两种分类：C1、C2。 C1：也称为client编译器，适用于对启动速度有要求的应用，采用少量的优化，加快即时编译的速度； C2：称为server编译器，适用于对性能峰值有高要求的服务端程序，采用的优化手段较为复杂，因此编译时间较长。 JVM采用分层编译的方式，热点方法采用C1编译，对于热点方法中的热点采用C2编译；HotSpot的编译过程，是单独的编译线程完成的，按照CPU的数量分配数量，通常C1：C2 = 1：2； 5.JVM怎么判断是热点代码简单的说就是：JVM有一个计数器，记住每个方法调用的次数，超过了设定的阈值就使用对应的即时编译器。 对于分层即时编译，一般来说如果超过了2000调用C1，超过了15000调用C2。 以上内容为个人学习笔记，原文来自：https://time.geekbang.org/column/article/11289]]></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019春节上海3日游]]></title>
     <url>%2F2019%2F02%2F15%2F2019%E6%98%A5%E8%8A%82%E4%B8%8A%E6%B5%B73%E6%97%A5%E6%B8%B8%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[开篇时间地点原计划总消费景点介绍外滩东方明珠豫园&amp;城隍庙感受照片]]></content>
       <categories>
         <category>旅游</category>
       </categories>

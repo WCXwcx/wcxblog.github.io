@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wcxwcx.github.io/"/>
-  <updated>2019-02-15T08:26:39.000Z</updated>
+  <updated>2019-03-25T13:23:22.715Z</updated>
   <id>https://wcxwcx.github.io/</id>
   
   <author>
@@ -17,13 +17,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Java编译过程</title>
+    <link href="https://wcxwcx.github.io/2019/03/25/Java%E7%BC%96%E8%AF%91/"/>
+    <id>https://wcxwcx.github.io/2019/03/25/Java编译/</id>
+    <published>2019-03-25T13:00:00.000Z</published>
+    <updated>2019-03-25T13:23:22.715Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-Java编程过程"><a href="#1-Java编程过程" class="headerlink" title="1.Java编程过程"></a>1.Java编程过程</h2><p><img src="/img/java/Java编译过程.png" alt="Java编译过程" title="Java编译过程"></p><h2 id="2-JVM将字节码翻译为机器码的过程"><a href="#2-JVM将字节码翻译为机器码的过程" class="headerlink" title="2.JVM将字节码翻译为机器码的过程"></a>2.JVM将字节码翻译为机器码的过程</h2><p><img src="/img/java/JVM翻译过程.png" alt="JVM翻译过程" title="JVM翻译过程"></p><blockquote><p>引用 <a href="https://time.geekbang.org/column/article/11289" target="_blank" rel="noopener">https://time.geekbang.org/column/article/11289</a> 中的图片</p></blockquote><h2 id="3-解释执行和JIT的区别"><a href="#3-解释执行和JIT的区别" class="headerlink" title="3.解释执行和JIT的区别"></a>3.解释执行和JIT的区别</h2><p>概念：JIT：just-in-time compilation，即时编译器</p><p>解释执行：逐行读取字节码，一边翻译为机器码一边执行。优点：不需要一次把大文件加载到内存，由于不需要提前编译，所有启动的速度比较快</p><p>JIT：将热点代码 整体翻译为机器码，再执行。通常以一个方法为单位。优点：执行时速度比较快，而且提前整体编译，jvm知道运行时的部分信息，可以进行优化，比较适合对性能要求比较高的应用</p><p>JVM采用两种混合的模式，先解释执行字节码，对于反复执行的代码，已方法为单位进行即时编译，下次调用时直接从内存读取编译后的结果即可。</p><h2 id="4-即使编译器的分类"><a href="#4-即使编译器的分类" class="headerlink" title="4.即使编译器的分类"></a>4.即使编译器的分类</h2><p>目前主要有两种分类：C1、C2。</p><p>C1：也称为client编译器，适用于对启动速度有要求的应用，采用少量的优化，加快即时编译的速度；</p><p>C2：称为server编译器，适用于对性能峰值有高要求的服务端程序，采用的优化手段较为复杂，因此编译时间较长。</p><p>JVM采用分层编译的方式，热点方法采用C1编译，对于热点方法中的热点采用C2编译；HotSpot的编译过程，是单独的编译线程完成的，按照CPU的数量分配数量，通常C1：C2 = 1：2；</p><h2 id="5-JVM怎么判断是热点代码"><a href="#5-JVM怎么判断是热点代码" class="headerlink" title="5.JVM怎么判断是热点代码"></a>5.JVM怎么判断是热点代码</h2><p>简单的说就是：JVM有一个计数器，记住每个方法调用的次数，超过了设定的阈值就使用对应的即时编译器。</p><p>对于分层即时编译，一般来说如果超过了2000调用C1，超过了15000调用C2。</p><blockquote><p>以上内容为个人学习笔记，原文来自：<a href="https://time.geekbang.org/column/article/11289" target="_blank" rel="noopener">https://time.geekbang.org/column/article/11289</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-Java编程过程&quot;&gt;&lt;a href=&quot;#1-Java编程过程&quot; class=&quot;headerlink&quot; title=&quot;1.Java编程过程&quot;&gt;&lt;/a&gt;1.Java编程过程&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/img/java/Java编译过程.png&quot; alt=
+      
+    
+    </summary>
+    
+      <category term="Java基础" scheme="https://wcxwcx.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Java" scheme="https://wcxwcx.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019春节上海3日游</title>
     <link href="https://wcxwcx.github.io/2019/02/15/2019%E6%98%A5%E8%8A%82%E4%B8%8A%E6%B5%B73%E6%97%A5%E6%B8%B8/"/>
     <id>https://wcxwcx.github.io/2019/02/15/2019春节上海3日游/</id>
     <published>2019-02-15T08:26:05.000Z</published>
-    <updated>2019-02-15T08:26:39.000Z</updated>
+    <updated>2019-03-25T13:23:46.698Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="开篇"><a href="#开篇" class="headerlink" title="开篇"></a>开篇</h1><h2 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h2><h2 id="地点"><a href="#地点" class="headerlink" title="地点"></a>地点</h2><h2 id="原计划"><a href="#原计划" class="headerlink" title="原计划"></a>原计划</h2><h2 id="总消费"><a href="#总消费" class="headerlink" title="总消费"></a>总消费</h2><h1 id="景点介绍"><a href="#景点介绍" class="headerlink" title="景点介绍"></a>景点介绍</h1><h2 id="外滩"><a href="#外滩" class="headerlink" title="外滩"></a>外滩</h2><h2 id="东方明珠"><a href="#东方明珠" class="headerlink" title="东方明珠"></a>东方明珠</h2><h2 id="豫园-amp-城隍庙"><a href="#豫园-amp-城隍庙" class="headerlink" title="豫园&amp;城隍庙"></a>豫园&amp;城隍庙</h2><h1 id="感受"><a href="#感受" class="headerlink" title="感受"></a>感受</h1><h1 id="照片"><a href="#照片" class="headerlink" title="照片"></a>照片</h1><p><img src="/img/waitan.jpeg" alt="外滩" title="外滩"></p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;开篇&quot;&gt;&lt;a href=&quot;#开篇&quot; class=&quot;headerlink&quot; title=&quot;开篇&quot;&gt;&lt;/a&gt;开篇&lt;/h1&gt;&lt;h2 id=&quot;时间&quot;&gt;&lt;a href=&quot;#时间&quot; class=&quot;headerlink&quot; title=&quot;时间&quot;&gt;&lt;/a&gt;时间&lt;/h2&gt;&lt;h2 id
+      
     
     </summary>
     
